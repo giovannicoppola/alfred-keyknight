@@ -32,7 +32,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>qww</string>
+				<string>{var:MAP_KEY}</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -44,7 +44,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>/usr/bin/python3 keyknight.py $1</string>
+				<string>/usr/bin/python3 keyknight.py "map" $1</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -52,16 +52,65 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>keyknight</string>
+				<string>keyknight (mapped)</string>
 				<key>type</key>
 				<integer>11</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>315A26AD-2578-4663-B856-2470F0B798F4</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>{var:LEARNING_KEY}</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>/usr/bin/python3 keyknight.py "hidden" $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>keyknight (learning)</string>
+				<key>type</key>
+				<integer>11</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>9CA3C80D-EA49-423D-912B-2F5E5E9E8391</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -73,13 +122,141 @@
 		<key>315A26AD-2578-4663-B856-2470F0B798F4</key>
 		<dict>
 			<key>xpos</key>
-			<real>700</real>
+			<real>255</real>
 			<key>ypos</key>
-			<real>480</real>
+			<real>245</real>
+		</dict>
+		<key>9CA3C80D-EA49-423D-912B-2F5E5E9E8391</key>
+		<dict>
+			<key>xpos</key>
+			<real>260</real>
+			<key>ypos</key>
+			<real>415</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>qwe</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Keyword for keyboard map</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>MAP_KEY</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>qww</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Keyword for learning mode</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>LEARNING_KEY</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>keycaps</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>1️⃣2️⃣3️⃣ ...</string>
+						<string>keycaps</string>
+					</array>
+					<array>
+						<string>⓵②③ ...</string>
+						<string>circled</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Symbol series</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>SYM_SERIES</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>defaultvalue</key>
+				<integer>4</integer>
+				<key>markercount</key>
+				<integer>6</integer>
+				<key>maxvalue</key>
+				<integer>8</integer>
+				<key>minvalue</key>
+				<integer>2</integer>
+				<key>onlystoponmarkers</key>
+				<false/>
+				<key>showmarkers</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Spacing</string>
+			<key>type</key>
+			<string>slider</string>
+			<key>variable</key>
+			<string>SPACING</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>defaultvalue</key>
+				<integer>6</integer>
+				<key>markercount</key>
+				<integer>16</integer>
+				<key>maxvalue</key>
+				<integer>15</integer>
+				<key>minvalue</key>
+				<integer>0</integer>
+				<key>onlystoponmarkers</key>
+				<false/>
+				<key>showmarkers</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Left Padding</string>
+			<key>type</key>
+			<string>slider</string>
+			<key>variable</key>
+			<string>LEFT_PAD</string>
+		</dict>
+	</array>
+	<key>version</key>
+	<string></string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
