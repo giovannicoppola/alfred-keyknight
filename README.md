@@ -28,7 +28,7 @@ src="https://img.shields.io/github/downloads/giovannicoppola/alfred-keyknight/to
 
 <h1 id="motivation">Motivation ✅</h1>
 
-- Quickly check the layout and finger positions of QWERTY and Dvorak keyboard to improve your touchtyping or learn a new keyboard layout.
+- Quickly check the layout and finger positions of QWERTY or Dvorak keyboards to improve your touchtyping or learn a new keyboard layout.
 
 
 <h1 id="setting-up">Setting up ⚙️</h1>
@@ -43,7 +43,7 @@ src="https://img.shields.io/github/downloads/giovannicoppola/alfred-keyknight/to
 	- set the keyword or hotkey to open in map mode (all keys labeled, default: `qwe`)
 	- set the keyword or hotkey to open in learning mode (no keys labeled, default: `qww`)
 	- set keyboard layout (`QWERTY` and `Dvorak` currently supported)
-	- choose the set of symbols to indicate finger positions (default: 1️⃣2️⃣3️⃣)
+	- choose the set of symbols to indicate finger positions (default: 1️⃣2️⃣3️⃣...)
 	- set overall spacing
 	- set left padding
 	
@@ -51,7 +51,7 @@ src="https://img.shields.io/github/downloads/giovannicoppola/alfred-keyknight/to
 <h1 id="usage">Basic Usage 📖</h1>
 
 - open in map or learning mode, then press keys to see their position on the keyboard and corresponding finger
-- QuickLook (⌘-Y or ⇧) will show a diagram of the keyboard layout.
+- QuickLook (`⌘-Y` or `⇧`) will show a diagram of the keyboard layout.
 
 
 
@@ -64,7 +64,7 @@ src="https://img.shields.io/github/downloads/giovannicoppola/alfred-keyknight/to
 <h1 id="acknowledgments">Acknowledgments 😀</h1>
 
 - Thanks to the [Alfred forum](https://www.alfredforum.com) community!
-- Patrick Sy ([@zeitlings](https://github.com/zeitlings) for ispiration with [Calendar++](https://github.com/zeitlings/alfred-calendar))
+- Patrick Sy ([@zeitlings](https://github.com/zeitlings) for inspiration with [Calendar++](https://github.com/zeitlings/alfred-calendar))
 - Icon from [Flaticon](https://www.flaticon.com/free-icon/wasd_8982293)
 - keyboard diagrams from https://onlinetyping.org/
 
@@ -72,7 +72,7 @@ src="https://img.shields.io/github/downloads/giovannicoppola/alfred-keyknight/to
 
 <h1 id="changelog">Changelog 🧰</h1>
 
-- 10-11-2024: version 0.1
+- 2024-10-11: version 0.1
 
 
 <h1 id="feedback">Feedback 🧐</h1>

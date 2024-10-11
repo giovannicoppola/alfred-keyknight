@@ -205,90 +205,33 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string># alfred-keyknight 
+	<string># keyknight 
 conquer your keyboard 👇️
 
 An Alfred Worfklow to review the layout of your keyboard and corresponding finger positions.
 
 
-&lt;a href="https://github.com/giovannicoppola/alfred-keyknight/releases/latest/"&gt;
-&lt;img alt="Downloads"
-src="https://img.shields.io/github/downloads/giovannicoppola/alfred-keyknight/total?color=purple&amp;label=Downloads"&gt;&lt;br/&gt;
-&lt;/a&gt;
+![](../keyknight.png)
 
-![](keyknight.png)
+## Motivation ✅
 
-
-&lt;!-- MarkdownTOC autolink="true" bracket="round" depth="3" autoanchor="true" --&gt;
-
-- [Motivation](#motivation)
-- [Setting up](#setting-up)
-- [Basic Usage](#usage)
-- [Known Issues](#known-issues)
-- [Acknowledgments](#acknowledgments)
-- [Changelog](#changelog)
-- [Feedback](#feedback)
-
-&lt;!-- /MarkdownTOC --&gt;
+- Quickly check the layout and finger positions of QWERTY or Dvorak keyboards to improve your touchtyping or learn a new keyboard layout.
 
 
+## Default settings ⚙️
 
-&lt;h1 id="motivation"&gt;Motivation ✅&lt;/h1&gt;
-
-- Quickly check the layout and finger positions of QWERTY and Dvorak keyboard to improve your touchtyping or learn a new keyboard layout.
-
-
-&lt;h1 id="setting-up"&gt;Setting up ⚙️&lt;/h1&gt;
-
-- Alfred 5 with Powerpack license
-- Python3 (howto [here](https://www.freecodecamp.org/news/python-version-on-mac-update/))
-
-
-
-## Default settings 
-- In Alfred, open the 'Configure Workflow' menu in `alfred-keyknight` preferences
-	- set the keyword or hotkey to open in map mode (all keys labeled, default: `qwe`)
-	- set the keyword or hotkey to open in learning mode (no keys labeled, default: `qww`)
-	- set keyboard layout (`QWERTY` and `Dvorak` currently supported)
-	- choose the set of symbols to indicate finger positions (default: 1️⃣2️⃣3️⃣)
-	- set overall spacing
-	- set left padding
+- set the keyword or hotkey to open in map mode (all keys labeled, default: `qwe`)
+- set the keyword or hotkey to open in learning mode (no keys labeled, default: `qww`)
+- choose the set of symbols to indicate finger positions (default: 1️⃣2️⃣3️⃣...)
+- set keyboard layout (`QWERTY` and `Dvorak` currently supported)
+- set overall spacing
+- set left padding
 	
 
-&lt;h1 id="usage"&gt;Basic Usage 📖&lt;/h1&gt;
+## Basic Usage 📖
 
 - open in map or learning mode, then press keys to see their position on the keyboard and corresponding finger
-- QuickLook (⌘-Y or ⇧) will show a diagram of the keyboard layout.
-
-
-
-&lt;h1 id="known-issues"&gt;Limitations &amp; known issues ⚠️&lt;/h1&gt;
-
-- May not show spacing correctly in some Alfred themes
-
-
-
-&lt;h1 id="acknowledgments"&gt;Acknowledgments 😀&lt;/h1&gt;
-
-- Thanks to the [Alfred forum](https://www.alfredforum.com) community!
-- Patrick Sy ([@zeitlings](https://github.com/zeitlings) for ispiration with [Calendar++](https://github.com/zeitlings/alfred-calendar))
-- Icon from [Flaticon](https://www.flaticon.com/free-icon/wasd_8982293)
-- keyboard diagrams from https://onlinetyping.org/
-
-
-
-&lt;h1 id="changelog"&gt;Changelog 🧰&lt;/h1&gt;
-
-- 10-11-2024: version 0.1
-
-
-&lt;h1 id="feedback"&gt;Feedback 🧐&lt;/h1&gt;
-
-Feedback welcome! If you notice a bug, or have ideas for new features, please feel free to get in touch either here, or on the [Alfred](https://www.alfredforum.com) forum. 
-
-# Acknowledgements
-
-cc calendar</string>
+- QuickLook (`⌘-Y` or `⇧`) will show a diagram of the keyboard layout.</string>
 	<key>uidata</key>
 	<dict>
 		<key>315A26AD-2578-4663-B856-2470F0B798F4</key>
@@ -337,7 +280,7 @@ cc calendar</string>
 			<key>description</key>
 			<string></string>
 			<key>label</key>
-			<string>Keyword for keyboard map</string>
+			<string>Keyword for map mode</string>
 			<key>type</key>
 			<string>textfield</string>
 			<key>variable</key>
@@ -471,9 +414,11 @@ cc calendar</string>
 			<string>LEFT_PAD</string>
 		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string></string>
+	<string>0.1</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/giovannicoppola/alfred-keyknight</string>
 </dict>
 </plist>
