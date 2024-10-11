@@ -5,7 +5,34 @@
 	<key>bundleid</key>
 	<string>giovanni-keyknight</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>AB8F397A-0188-434D-AAAA-D523253E886D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>315A26AD-2578-4663-B856-2470F0B798F4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BB0C3DD8-193E-4B96-8278-328D1456E1F6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9CA3C80D-EA49-423D-912B-2F5E5E9E8391</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>giovanni</string>
 	<key>description</key>
@@ -68,6 +95,68 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>AB8F397A-0188-434D-AAAA-D523253E886D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>BB0C3DD8-193E-4B96-8278-328D1456E1F6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -116,7 +205,90 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string># alfred-keyknight 
+conquer your keyboard 👇️
+
+An Alfred Worfklow to review the layout of your keyboard and corresponding finger positions.
+
+
+&lt;a href="https://github.com/giovannicoppola/alfred-keyknight/releases/latest/"&gt;
+&lt;img alt="Downloads"
+src="https://img.shields.io/github/downloads/giovannicoppola/alfred-keyknight/total?color=purple&amp;label=Downloads"&gt;&lt;br/&gt;
+&lt;/a&gt;
+
+![](keyknight.png)
+
+
+&lt;!-- MarkdownTOC autolink="true" bracket="round" depth="3" autoanchor="true" --&gt;
+
+- [Motivation](#motivation)
+- [Setting up](#setting-up)
+- [Basic Usage](#usage)
+- [Known Issues](#known-issues)
+- [Acknowledgments](#acknowledgments)
+- [Changelog](#changelog)
+- [Feedback](#feedback)
+
+&lt;!-- /MarkdownTOC --&gt;
+
+
+
+&lt;h1 id="motivation"&gt;Motivation ✅&lt;/h1&gt;
+
+- Quickly check the layout and finger positions of QWERTY and Dvorak keyboard to improve your touchtyping or learn a new keyboard layout.
+
+
+&lt;h1 id="setting-up"&gt;Setting up ⚙️&lt;/h1&gt;
+
+- Alfred 5 with Powerpack license
+- Python3 (howto [here](https://www.freecodecamp.org/news/python-version-on-mac-update/))
+
+
+
+## Default settings 
+- In Alfred, open the 'Configure Workflow' menu in `alfred-keyknight` preferences
+	- set the keyword or hotkey to open in map mode (all keys labeled, default: `qwe`)
+	- set the keyword or hotkey to open in learning mode (no keys labeled, default: `qww`)
+	- set keyboard layout (`QWERTY` and `Dvorak` currently supported)
+	- choose the set of symbols to indicate finger positions (default: 1️⃣2️⃣3️⃣)
+	- set overall spacing
+	- set left padding
+	
+
+&lt;h1 id="usage"&gt;Basic Usage 📖&lt;/h1&gt;
+
+- open in map or learning mode, then press keys to see their position on the keyboard and corresponding finger
+- QuickLook (⌘-Y or ⇧) will show a diagram of the keyboard layout.
+
+
+
+&lt;h1 id="known-issues"&gt;Limitations &amp; known issues ⚠️&lt;/h1&gt;
+
+- May not show spacing correctly in some Alfred themes
+
+
+
+&lt;h1 id="acknowledgments"&gt;Acknowledgments 😀&lt;/h1&gt;
+
+- Thanks to the [Alfred forum](https://www.alfredforum.com) community!
+- Patrick Sy ([@zeitlings](https://github.com/zeitlings) for ispiration with [Calendar++](https://github.com/zeitlings/alfred-calendar))
+- Icon from [Flaticon](https://www.flaticon.com/free-icon/wasd_8982293)
+- keyboard diagrams from https://onlinetyping.org/
+
+
+
+&lt;h1 id="changelog"&gt;Changelog 🧰&lt;/h1&gt;
+
+- 10-11-2024: version 0.1
+
+
+&lt;h1 id="feedback"&gt;Feedback 🧐&lt;/h1&gt;
+
+Feedback welcome! If you notice a bug, or have ideas for new features, please feel free to get in touch either here, or on the [Alfred](https://www.alfredforum.com) forum. 
+
+# Acknowledgements
+
+cc calendar</string>
 	<key>uidata</key>
 	<dict>
 		<key>315A26AD-2578-4663-B856-2470F0B798F4</key>
@@ -124,14 +296,28 @@
 			<key>xpos</key>
 			<real>255</real>
 			<key>ypos</key>
-			<real>245</real>
+			<real>250</real>
 		</dict>
 		<key>9CA3C80D-EA49-423D-912B-2F5E5E9E8391</key>
 		<dict>
 			<key>xpos</key>
 			<real>260</real>
 			<key>ypos</key>
-			<real>415</real>
+			<real>405</real>
+		</dict>
+		<key>AB8F397A-0188-434D-AAAA-D523253E886D</key>
+		<dict>
+			<key>xpos</key>
+			<real>50</real>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
+		<key>BB0C3DD8-193E-4B96-8278-328D1456E1F6</key>
+		<dict>
+			<key>xpos</key>
+			<real>50</real>
+			<key>ypos</key>
+			<real>405</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -193,6 +379,10 @@
 						<string>⓵②③ ...</string>
 						<string>circled</string>
 					</array>
+					<array>
+						<string>❶❷❸ ...</string>
+						<string>full</string>
+					</array>
 				</array>
 			</dict>
 			<key>description</key>
@@ -203,6 +393,32 @@
 			<string>popupbutton</string>
 			<key>variable</key>
 			<string>SYM_SERIES</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>qwerty</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>QWERTY</string>
+						<string>qwerty</string>
+					</array>
+					<array>
+						<string>Dvorak</string>
+						<string>dvorak</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Keyboard Layout</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>LAYOUT</string>
 		</dict>
 		<dict>
 			<key>config</key>
