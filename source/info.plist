@@ -32,6 +32,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>E9138577-74D4-456D-8F44-F1C978230EC7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>961BDDAE-2EA8-4D1D-B622-BC6302DA23FB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>giovanni</string>
@@ -203,6 +216,70 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>12</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>Q</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>E9138577-74D4-456D-8F44-F1C978230EC7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>columncount</key>
+				<integer>12</integer>
+				<key>filterable</key>
+				<false/>
+				<key>fixedorder</key>
+				<true/>
+				<key>imageaspect</key>
+				<integer>0</integer>
+				<key>inputfile</key>
+				<string>keyknight.py</string>
+				<key>inputtype</key>
+				<integer>1</integer>
+				<key>loadingtext</key>
+				<string></string>
+				<key>showsubtitles</key>
+				<true/>
+				<key>showtitles</key>
+				<false/>
+				<key>subtitlesinfooter</key>
+				<false/>
+				<key>titlesinfooter</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.userinterface.grid</string>
+			<key>uid</key>
+			<string>961BDDAE-2EA8-4D1D-B622-BC6302DA23FB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string># keyknight 
@@ -241,6 +318,13 @@ An Alfred Worfklow to review the layout of your keyboard and corresponding finge
 			<key>ypos</key>
 			<real>250</real>
 		</dict>
+		<key>961BDDAE-2EA8-4D1D-B622-BC6302DA23FB</key>
+		<dict>
+			<key>xpos</key>
+			<real>1100</real>
+			<key>ypos</key>
+			<real>465</real>
+		</dict>
 		<key>9CA3C80D-EA49-423D-912B-2F5E5E9E8391</key>
 		<dict>
 			<key>xpos</key>
@@ -261,6 +345,13 @@ An Alfred Worfklow to review the layout of your keyboard and corresponding finge
 			<real>50</real>
 			<key>ypos</key>
 			<real>405</real>
+		</dict>
+		<key>E9138577-74D4-456D-8F44-F1C978230EC7</key>
+		<dict>
+			<key>xpos</key>
+			<real>855</real>
+			<key>ypos</key>
+			<real>445</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
