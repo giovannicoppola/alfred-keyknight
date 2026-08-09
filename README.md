@@ -72,6 +72,7 @@ src="https://img.shields.io/github/downloads/giovannicoppola/alfred-keyknight/to
 
 <h1 id="changelog">Changelog 🧰</h1>
 
+- 2026-07-21: version 0.1.1, fixed crash when spacing/padding are unset, qwerty/keycaps fallbacks for unknown values, removed stray 0-byte files
 - 2024-10-11: version 0.1
 
 

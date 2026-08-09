@@ -6,6 +6,19 @@
 	<string>giovanni-keyknight</string>
 	<key>connections</key>
 	<dict>
+		<key>961BDDAE-2EA8-4D1D-B622-BC6302DA23FB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D0627ED5-5EB6-409D-A4D0-3F95D1A12CBF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>AB8F397A-0188-434D-AAAA-D523253E886D</key>
 		<array>
 			<dict>
@@ -32,11 +45,24 @@
 				<false/>
 			</dict>
 		</array>
+		<key>E8E01063-6E60-486C-9A38-A21DBEF6465B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>80181A3A-49A4-4003-89A9-522459A10874</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>E9138577-74D4-456D-8F44-F1C978230EC7</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>961BDDAE-2EA8-4D1D-B622-BC6302DA23FB</string>
+				<string>E8E01063-6E60-486C-9A38-A21DBEF6465B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -56,6 +82,63 @@
 	<string>keyknight</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>myTextView</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>80181A3A-49A4-4003-89A9-522459A10874</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>behaviour</key>
+				<integer>0</integer>
+				<key>fontmode</key>
+				<integer>2</integer>
+				<key>fontsizing</key>
+				<integer>4</integer>
+				<key>footertext</key>
+				<string></string>
+				<key>inputfile</key>
+				<string>keyknight.py</string>
+				<key>inputtype</key>
+				<integer>1</integer>
+				<key>loadingtext</key>
+				<string></string>
+				<key>outputmode</key>
+				<integer>1</integer>
+				<key>scriptinput</key>
+				<integer>1</integer>
+				<key>spellchecking</key>
+				<integer>0</integer>
+				<key>stackview</key>
+				<true/>
+			</dict>
+			<key>inboundconfig</key>
+			<dict>
+				<key>externalid</key>
+				<string>myTextView</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.userinterface.text</string>
+			<key>uid</key>
+			<string>E8E01063-6E60-486C-9A38-A21DBEF6465B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -228,11 +311,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>12</integer>
+				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>524288</integer>
+				<integer>0</integer>
 				<key>hotstring</key>
-				<string>Q</string>
+				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -246,6 +329,25 @@
 			<string>E9138577-74D4-456D-8F44-F1C978230EC7</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>myGrid</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>D0627ED5-5EB6-409D-A4D0-3F95D1A12CBF</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -272,6 +374,11 @@
 				<false/>
 				<key>titlesinfooter</key>
 				<true/>
+			</dict>
+			<key>inboundconfig</key>
+			<dict>
+				<key>externalid</key>
+				<string>myGrid</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.userinterface.grid</string>
@@ -318,6 +425,13 @@ An Alfred Worfklow to review the layout of your keyboard and corresponding finge
 			<key>ypos</key>
 			<real>250</real>
 		</dict>
+		<key>80181A3A-49A4-4003-89A9-522459A10874</key>
+		<dict>
+			<key>xpos</key>
+			<real>1140</real>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
 		<key>961BDDAE-2EA8-4D1D-B622-BC6302DA23FB</key>
 		<dict>
 			<key>xpos</key>
@@ -345,6 +459,20 @@ An Alfred Worfklow to review the layout of your keyboard and corresponding finge
 			<real>50</real>
 			<key>ypos</key>
 			<real>405</real>
+		</dict>
+		<key>D0627ED5-5EB6-409D-A4D0-3F95D1A12CBF</key>
+		<dict>
+			<key>xpos</key>
+			<real>1305</real>
+			<key>ypos</key>
+			<real>455</real>
+		</dict>
+		<key>E8E01063-6E60-486C-9A38-A21DBEF6465B</key>
+		<dict>
+			<key>xpos</key>
+			<real>880</real>
+			<key>ypos</key>
+			<real>145</real>
 		</dict>
 		<key>E9138577-74D4-456D-8F44-F1C978230EC7</key>
 		<dict>
@@ -508,7 +636,7 @@ An Alfred Worfklow to review the layout of your keyboard and corresponding finge
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.1.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/giovannicoppola/alfred-keyknight</string>
 </dict>
